@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <title>Submit Recommendations</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.png">
+</head>
+
+<body>
+  <header>
+    <a href="#main" class="skip">Skip to main content</a>
+    <h1>Week 10 Discussion Activity</h1>
+  </header>
+
+
+  <main id="main">
+
+    <form action="https://formspree.io/f/xvoebdla" method="POST">
+
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name"><br><br>
+      <div class="radio">
+        <h2>Area of Submission:</h2><br>
+        <!-- How can the label and button line up and be easily navigatable? -->
+        <fieldset><legend>Select from options</legend>
+        <div class="radios">
+          <input type="radio" id="travel" name="interest" value="travel" required>
+          <label for="travel">Travel</label><br>
+          <input type="radio" id="recipe" name="interest" value="recipe" tabindex="0">
+          <label for="recipe">Recipe</label><br>
+          <input type="radio" id="pets" name="interest" value="pets">
+          <label for="pets">Pets</label>
+        </div>
+        </fieldset>
+        <br><br>
+      </div>
+
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message"></textarea><br><br>
+
+      <label for="image">Upload Image:</label><br>
+      <input type="file" id="image" name="image"><br><br>
+
+      <input type="submit" value="Submit">
+
+      <button type="reset">Reset</button>
+    </form>
+  </main>
+</body>
+
+</html>
